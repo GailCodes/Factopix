@@ -1,2 +1,5 @@
 # Factopix
-Generate a random (and useless) fact with a random picture.
+
+Factopix is a completely useless website that generates a random fact along with a random picture.
+
+

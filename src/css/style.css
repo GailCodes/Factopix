@@ -1,88 +1,92 @@
 :root {
-		--primary-color: #f7f7f7;
-		--secondary-color: #222;
+  --primary-color: #f7f7f7;
+  --secondary-color: #222;
 
-		--font-size: 17px;
+  --font-size: 1rem;
 
-		--border-radius: 4px;
+  --border-radius: 4px;
 
-		--spacing: 25px;
+  --spacing: 25px;
 
-		--image-size: 300px;
+  --image-size: 300px;
 }
 
 .hidden {
-	display: none;
+  display: none;
 }
 
 * {
-		padding:0;
-		margin:0;
-		box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
 }
 
 body {
-		font-size: var(--font-size);
-		background-color: var(--primary-color);
+  font-size: var(--font-size);
+  background-color: var(--primary-color);
 }
 
 main {
-		display: grid;
-		grid-template-rows: var(--image-size) 100px 50px;
-		justify-content: center;
-		gap: var(--spacing);
+  display: grid;
+  grid-template-rows: var(--image-size) 100px 50px;
+  justify-content: center;
+  gap: var(--spacing);
 
-		text-align: center;
+  text-align: center;
 
-		padding-top: var(--spacing);
+  padding-top: var(--spacing);
 }
 
 main img {
-		border-radius: var(--border-radius);
+  border-radius: var(--border-radius);
 }
 
 main #image-loading {
-	width: var(--image-size);
-	height: var(--image-size);
-	margin: auto;
-	animation: backgroundColorChange 400ms infinite ease-in-out;
+  width: var(--image-size);
+  height: var(--image-size);
+  margin: auto;
+  animation: backgroundColorChange 400ms infinite ease-in-out;
 }
 
 main #fact-container {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 main p {
-		font-style: italic;
-		color: var(--secondary-color);
-		max-width: 50ch;
-		padding: 0 10px;
+  font-style: italic;
+  color: var(--secondary-color);
+  max-width: 50ch;
+  padding: 0 10px;
 }
 
 main button {
-		border: 1px solid var(--secondary-color);
-		border-radius: var(--border-radius);
-		background-color: #fff;
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  background-color: #fff;
 
-		padding: 5px 15px;
-		cursor: pointer;
+  padding: 5px 15px;
+  cursor: pointer;
 }
 
 main button:hover {
-		background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 @keyframes backgroundColorChange {
-	0% {
-		background: #ccc;
-	}
+  0% {
+    background: #ccc;
+  }
 
-	50% {
-		background: #c7c7c7;
-	}
+  50% {
+    background: #c7c7c7;
+  }
 
-	100% {
-		background: #ccc;
-	}
+  100% {
+    background: #ccc;
+  }
 }

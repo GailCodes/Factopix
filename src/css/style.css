@@ -57,6 +57,7 @@ main p {
 		font-style: italic;
 		color: var(--secondary-color);
 		max-width: 50ch;
+		padding: 0 10px;
 }
 
 main button {

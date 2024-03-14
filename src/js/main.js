@@ -25,7 +25,7 @@ async function showLoadingStates(loading) {
   } else {
     imageLoadingEl.classList.add("hidden");
     imageEl.classList.remove("hidden");
-    buttonEl.textContent = "Genarete";
+    buttonEl.textContent = "Generate";
   }
 }
 
